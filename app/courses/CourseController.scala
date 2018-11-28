@@ -29,16 +29,9 @@ class CourseController @Inject()(cc: ControllerComponents) extends AbstractContr
 					"profesores" -> course.profesores
 				)
 			}
-			case None => { "Curso no encontrado" }
-			case _ => { ":o ha ocurrido un error" }
+			case None => { Json.obj("error" -> "Curso no encontrado") }
+			case _ => { Json.obj("error" -> ":o ha ocurrido un error") }
 		}
-		Json.obj(
-			"grupo" -> id,
-			"cupomaximo" -> 4,
-			"cupodisponible" -> 5,
-			"aulas" -> "19-216",
-			"profesores" -> "Marín"
-		)
 	}
 
 	private val courseList = List(
