@@ -1,0 +1,15 @@
+build
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.gradle
+/.project
+/.settings
+/.ensime
+/.ensime_cache
+ensime-langserver.log
+/RUNNING_PID
+
+/.vscode
