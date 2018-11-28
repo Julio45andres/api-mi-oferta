@@ -8,8 +8,8 @@ import play.api.libs.json._
 final case class CourseData(grupo: Int, cupomaximo: Int, cupodisponible: Int, aulas: String, profesores: String)
 
 /**
- * This controller creates an `Action` to handle HTTP requests to the
- * application's home page.
+ * 
+ * Course API Controller
  */
 @Singleton
 class CourseController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {

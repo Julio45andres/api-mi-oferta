@@ -8,6 +8,8 @@ GET     /                           controllers.HomeController.index
 
 -> 		/courses					courses.CourseRouter
 
+->		/users						users.UserRouter
+
 GET		/hello 						controllers.HomeController.hello
 
 # Map static resources from the /public folder to the /assets URL path
